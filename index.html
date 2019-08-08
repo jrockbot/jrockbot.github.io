@@ -10,7 +10,9 @@
         font-size: 3em;
         border: 2px solid rgb(230,230,230);
         padding: 30px 0px 20px 0px;
+        opacity: 0.9;
         text-align: center;
+        position: relative;
       }
 
       #main-container{
@@ -19,18 +21,24 @@
         margin: 20px;
         width: 90%%;
         border: 5px solid rgb(230,230,230);
+        opacity: 0.9;
+      }
+
+      .transtext{
+        font-weight: bold;
+        color: inherit;
       }
 
       #pickachu{
         float: center;
         margin: 10px;
-        font-style: italic;
       }
 
       #khanblog{
         padding: 20px;
         border: 5px solid rgb(230,230,230);
         text-align: center;
+        opacity: 0.9;
         clear:both;
       }
 
@@ -39,8 +47,9 @@
         width: 50%;
         padding: 20px;
         background-color: rgb(232, 234, 237);
-        text-align: center;
+        opacity: 0.9;
         border: 5px solid rgb(230,230,230);
+        text-align: center;
       }
 
       #list{
@@ -60,9 +69,12 @@
         text-align: center;
       }
       body{
-        background-color: white ;
+        background-image: url(pokemonBack.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         font-size: 110%;
-        font-family: sans-serif ;
+        font-family: sans-serif;
       }
 
       a .clickpikachu{
@@ -77,7 +89,7 @@
     <h1 id= "jonathan-heading" >Jonathan Galvan</h1>
     <div id="main-container">
       <h2>My Odyssey into Web Development</h2>
-        <p>I like to consider myself a bit of a nerd. I like stuff such as <em>Pokemon,
+        <p class="transtext">I like to consider myself a bit of a nerd. I like stuff such as <em>Pokemon,
           Gundam, Starwars, Marvel</em> and well as other "<strong>nerdy</strong>" things. In my off time I like to watch movies
           as well as work out and stay active. I am currently working on becoming a web developer using free online
           resources such as Khan Academy and Codecademy. I decided its time for a change and I have to take charge of this change. Equally import is not incurring any more student loan debt. Im going to do everything in my power to become a self made developer. I have a background in IT but found out I would rather not be yelled at by angry users <strong>all</strong> day. Ive tinkered with python and wrote scripts using Powershell and through those little interactions i've discoverd I really enjoy the creative side of development. Im really loving web development and hope a little hard work and determination will go a long way. Anyways, I guess I should start a <em><a href="#khanblog">blog</a></em> about the my mental ramblings during the whole process. Im shooting to have a functioning developer portfolio within the next 10 months.
@@ -107,14 +119,12 @@
         </strong>
       </ul>
     </span>
-        <a href="https://www.youtube.com/watch?v=fCkeLBGSINs" target="_blank"><img src= "https://upload.wikimedia.org/wikipedia/sco/f/f7/Sugimoris025.png" alt= "A picture of the pokemon pikachu" width="330" id="pickachu"><span class="clickpikachu"><p>Click if you're a 90's baby</p></span></a>
+    <div id="pickachu">
+        <a href="https://www.youtube.com/watch?v=fCkeLBGSINs" target="_blank"><img src= "https://upload.wikimedia.org/wikipedia/sco/f/f7/Sugimoris025.png" alt= "A picture of the pokemon pikachu" width="330"><span class="clickpikachu"><p>Click if you're a 90's baby</p></span></a>
+    </div>
+    </div>
 
-
-      </div>
     <h2 id="khanblog"><a target= "_blank" href="blog.html">Khan Academy Course blog</a></h2>
 
   </body>
 </html>
-
-
-
