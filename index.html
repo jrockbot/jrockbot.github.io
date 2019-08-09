@@ -5,9 +5,10 @@
     <title>jrockbot</title>
     <style>
 
-      #jonathan-heading{
-        background-color: rgb(3, 219, 252);
+      .main-heading{
+        background-color: #ffa442;
         font-size: 3em;
+        font-family: serif;
         border: 2px solid rgb(230,230,230);
         padding: 30px 0px 20px 0px;
         opacity: 0.9;
@@ -15,39 +16,36 @@
         position: relative;
       }
 
-      #main-container{
+      .size{
+        font-size: 2em;
+      }
+
+      .main-container{
         background-color: rgb(232, 234, 237);
         padding: 15px 25px 0px 25px;
         margin: 20px;
-        width: 90%%;
+        width: 90%;
         border: 5px solid rgb(230,230,230);
         opacity: 0.9;
       }
 
       .transtext{
-        font-weight: bold;
         color: inherit;
       }
 
       #pickachu{
-        float: center;
-        margin: 10px;
-      }
-
-      #khanblog{
-        padding: 20px;
-        border: 5px solid rgb(230,230,230);
-        text-align: center;
-        opacity: 0.9;
-        clear:both;
+        float: right;
+        position: relative;
+        margin-bottom: inherit;
+        z-index: 1
       }
 
       #interest{
         float: right;
         width: 50%;
-        padding: 20px;
+        padding: 40px;
         background-color: rgb(232, 234, 237);
-        opacity: 0.9;
+        opacity: 0.9;5
         border: 5px solid rgb(230,230,230);
         text-align: center;
       }
@@ -68,6 +66,7 @@
         background-color: rgb(232, 234, 237);
         text-align: center;
       }
+
       body{
         background-image: url(pokemonBack.jpg);
         background-repeat: no-repeat;
@@ -79,6 +78,7 @@
 
       a .clickpikachu{
         text-align: center;
+        font-weight: bold;
       }
 
     </style>
@@ -86,11 +86,11 @@
 
   <body>
 
-    <h1 id= "jonathan-heading" >Jonathan Galvan</h1>
-    <div id="main-container">
+    <h1 class= "main-heading" >Jonathan Galvan</h1>
+    <div class="main-container">
       <h2>My Odyssey into Web Development</h2>
         <p class="transtext">I like to consider myself a bit of a nerd. I like stuff such as <em>Pokemon,
-          Gundam, Starwars, Marvel</em> and well as other "<strong>nerdy</strong>" things. In my off time I like to watch movies
+          Gundam, Starwars, Marvel</em> and well as other "<strong>nerdy</strong>" things. In free time I like to watch movies
           as well as work out and stay active. I am currently working on becoming a web developer using free online
           resources such as Khan Academy and Codecademy. I decided its time for a change and I have to take charge of this change. Equally import is not incurring any more student loan debt. Im going to do everything in my power to become a self made developer. I have a background in IT but found out I would rather not be yelled at by angry users <strong>all</strong> day. Ive tinkered with python and wrote scripts using Powershell and through those little interactions i've discoverd I really enjoy the creative side of development. Im really loving web development and hope a little hard work and determination will go a long way. Anyways, I guess I should start a <em><a href="#khanblog">blog</a></em> about the my mental ramblings during the whole process. Im shooting to have a functioning developer portfolio within the next 10 months.
 
@@ -104,27 +104,33 @@
 
         </p>
     </div>
-    <img src="https://img7-us.anidb.net/pics/anime/149067.jpg" alt="Mobile Suit Gundam poster" width="550px" height="650px">
+    <img src="https://img7-us.anidb.net/pics/anime/149067.jpg" alt="Mobile Suit Gundam poster" width="500px">
 
     <div id="interest">
     <h2>Interest and Hobbies</h2>
+
     <span id="list">
-      <ul><strong>
+      <ul>
         <li>Rock music</li>
         <li><a href="smilingdog.jpg" target="_blank">Walking Gracie</a></li>
         <li>Lifting weights</li>
         <li>Jumping rope</li>
         <li>Playing outside with the kids</li>
         <li>Anything Pokemon</li>
-        </strong>
       </ul>
     </span>
+
+    <h2>Future Projects</h2>
+    </div>
+
     <div id="pickachu">
         <a href="https://www.youtube.com/watch?v=fCkeLBGSINs" target="_blank"><img src= "https://upload.wikimedia.org/wikipedia/sco/f/f7/Sugimoris025.png" alt= "A picture of the pokemon pikachu" width="330"><span class="clickpikachu"><p>Click if you're a 90's baby</p></span></a>
     </div>
-    </div>
 
-    <h2 id="khanblog"><a target= "_blank" href="blog.html">Khan Academy Course blog</a></h2>
+    <h1 class="main-heading size"><a target= "_blank" href="blog.html">Khan Academy Course blog</a><h1>
+
+    <!--<h2 id="khanblog"><a target= "_blank" href="blog.html">Khan Academy Course blog</a></h2>-->
 
   </body>
 </html>
+
